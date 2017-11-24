@@ -17,10 +17,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <libopencm3/stm32/f1/rcc.h>
-#include <libopencm3/stm32/f1/gpio.h>
-
-#include "servo.h"
+#include <stdint.h>
+#include <include/servo.h>
+#include <include/libopencm3/stm32/f1/rcc.h>
+#include <include/libopencm3/stm32/f1/gpio.h>
 
 /**
  * Setup the system clock to 72MHz.

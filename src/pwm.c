@@ -17,10 +17,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <libopencm3/stm32/f1/rcc.h>
-#include <libopencm3/stm32/f1/gpio.h>
 
-#include "pwm.h"
+
+#include <include/pwm.h>
+#include <include/libopencm3/stm32/f1/gpio.h>
+#include <include/libopencm3/stm32/f1/rcc.h>
 
 void pwm_init_timer(volatile uint32_t *reg, uint32_t en, uint32_t timer_peripheral, uint32_t prescaler, uint32_t period)
 {

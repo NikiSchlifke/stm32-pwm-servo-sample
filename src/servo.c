@@ -17,12 +17,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <libopencm3/stm32/f1/rcc.h>
-#include <libopencm3/stm32/f1/gpio.h>
-#include <libopencm3/stm32/timer.h>
 
-#include "pwm.h"
-#include "servo.h"
+#include <include/pwm.h>
+#include <include/servo.h>
+#include <include/libopencm3/stm32/f1/rcc.h>
+#include <include/libopencm3/stm32/f1/gpio.h>
+
 
 void servo_init(void)
 {
